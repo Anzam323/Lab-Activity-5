@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>UP Mindanao - Home</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="/resources/demos/style.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <nav>
+            <div id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Academic Units</a></li>
+                        <ul id="menu">
+                            <li><div><a href="chss.html">College of Humanities and Social Sciences</a></div></li>
+                            <li><div><a href="csm.html">College of Science and Mathematics</a></div></li>
+                            <li><div><a href="som.html">School of Management</a></div></li>
+                        </ul>
+                        <li><a href="acads.html">Academic Programs</a></li>
+                    <li><a href="sign.html">Sign-up</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div>
+            <h3>Sign Up</h3>
+            <form>
+                <label for="firstName">First Name</label><br>
+                <input type="text" id="firstName" placeholder="Juan" required><br>
+                <label for="lastName">Last Name</label><br>
+                <input type="text" id="lastName" placeholder="Dela Cruz" required><br>
+                <label for="midName">Last Name</label><br>
+                <input type="text" id="midName" placeholder="Roxas" required><br>
+                <p>Gender:</p>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" value="Male">
+                <label for="female">Female</label>
+                <input type="radio" name="gender" value="Female">
+                <p>Date of Birth:</p>
+                <input type="text" id="datepicker"><br><br>
+                <div class="ui-widget">
+                    <label for="tags">Province: </label><br>
+                    <input id="tags">
+                </div><br>
+                <label for="yrlvl">Select year level:</label><br>
+                <input type="text" name="yrlvl" value="1" id="spinner-1"><br><br>
+                <input type="button" value="Submit" onclick="saveFile()"/>
+            </form>
+        </div>
+        <script src="js/index.js"></script>
+    </body>
+</html>
